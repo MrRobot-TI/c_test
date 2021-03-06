@@ -46,7 +46,7 @@ void dayin(struct Book book)
 
 int main()
 {
-	struct Book b1 = {0};
+	struct Book b1 ;//在vs中，如果使用未初始化的结构体会报错，使用形式b1 = getInput(b1);
 	printf("请输入第一本书信息：\n");
 
 	b1 = getInput();
